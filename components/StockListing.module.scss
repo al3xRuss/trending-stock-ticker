@@ -1,0 +1,61 @@
+.listingContainer {
+    @apply w-full grid grid-rows-1 mb-4 md:w-10/12 md:mx-auto;
+    
+    
+    .listing {
+        @apply flex w-full cursor-pointer font-semibold align-middle;
+
+        .listingCol {
+            @apply h-10;
+        }
+        .symbolCol {
+            @apply w-32 mb-1 mr-1;
+            .symbolPill {
+                @apply grid w-36 place-items-center md:px-5 md:py-2 font-semibold rounded-3xl text-white bg-indigo-500;
+            }
+        }
+        .nameCol {
+            @apply flex-1 text-left align-middle;
+            .nameText {
+                @apply h-full inline-block align-middle px-5 py-2;
+            }
+        }
+        .currentPriceCol {
+            @apply w-1/6 text-right align-middle;
+            .currentPriceText {
+                @apply inline-block px-5 py-2;
+            }
+        }
+        .priceChangeCol {
+            @apply w-1/6 h-10 text-right align-middle hidden md:block;
+            .priceChangeText {
+                @apply inline-block px-5 py-2;
+            }
+        }
+        .percentCol {
+            @apply h-10 text-right align-middle;
+            .percentPill {
+                @apply w-36 inline-flex items-center px-5 py-2 font-semibold rounded-3xl shadow-sm;
+            }
+        }
+        .toggleCol {
+            @apply w-10 h-10 text-right align-middle ml-2;
+            .toggle {
+                @apply w-10 inline-flex items-center px-2.5 py-3 font-semibold rounded-t-xl text-gray-800;
+            }
+        }
+    }
+    .newsContainer {
+        @apply flex w-full overflow-auto bg-gray-200 duration-300 ease-in-out;
+        .newsBlock {
+            @apply p-6 m-6 w-full bg-gray-100 rounded-3xl border border-gray-200 shadow-md;
+            .newsText {
+                @apply mb-3 font-normal text-gray-700;
+            }
+        }
+    }
+}
+
+.button {
+    @apply inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-3xl hover:bg-blue-800 focus:ring-4 focus:ring-blue-300;
+}
